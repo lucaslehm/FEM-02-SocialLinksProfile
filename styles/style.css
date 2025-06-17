@@ -1,0 +1,118 @@
+/*===== Imports =====*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* ===== Base ===== */
+
+:root {
+    /* === Collors === */
+    --cor1: #141414;
+    --cor2: #1F1F1F;
+    --cor3: #FFFFFF;
+    --cor4: #333333;
+    --cor5: #C4F82A;
+    --cor6: #D3D3D3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    color: var(--cor3);
+}
+
+body {
+    background-color: var(--cor1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.social_links_main_content {
+    background-color: var(--cor2);
+    padding: 1.5em 2em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile_pic_placeholder {
+    background-color: var(--cor5);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url(https://i.ibb.co/67gfdNnc/20250615-123653.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 1.2em;
+}
+
+.title_name {
+    font-weight: 600;
+    margin-bottom: .2em;
+}
+
+.description_location {
+    color: var(--cor5);
+    font-size: .9em;
+    font-weight: 500;
+    margin-bottom: 2em;
+}
+
+.description_biography {
+    color: var(--cor6);
+    width: 240px;
+    text-align: center;
+    font-size: .9em;
+    margin-bottom: 1.5em;
+}
+
+.social_link_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor4);
+    width: 240px;
+    height: 40px;
+    border-radius: .5em;
+    margin-bottom: 1em;
+    transition: all .2s ease;
+}
+
+.social_link_button:hover>.social_link {
+    color: var(--cor1);
+}
+
+.social_link_button:hover {
+    cursor: pointer;
+    background-color: var(--cor5);
+}
+
+.social_link_button.last {
+    margin-bottom: 0px;
+}
+
+.social_link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: .8em;
+}
+
+@media screen and (min-width:900px) {
+
+    .profile_pic_placeholder {
+        width: 120px;
+        height: 120px;
+    }
+
+    .description_biography {
+        width: 440px;
+    }
+
+    .social_link_button {
+        width: 440px;
+    }
+}
